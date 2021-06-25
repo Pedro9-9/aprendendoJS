@@ -1,8 +1,8 @@
-let btn = document.getElementById('btn-div');
+var btn = document.getElementById('btn-div');
 
-let container = document.querySelector('.container');
+var container = document.querySelector('.container');
 
-btn.addEventListener('click', function(e) {
+btn.addEventListener('click', function () {
 
     if (container.style.display === 'none') {
 
@@ -14,12 +14,12 @@ btn.addEventListener('click', function(e) {
     }
 });
 
-let capturando = "";
+
 
 function capturar() {
-    document.getElementById('ma').style.display = 'block'
-    capturando = document.getElementById('valor').value;
+    document.getElementById('ma').style.display = 'block';
+    var capturando = document.getElementById("valor").value;
     document.getElementById('valorDigitado').innerHTML = capturando;
-    document.getElementById('btn-div').value = "Prosseguir";
-
-}
+   
+        
+    }
